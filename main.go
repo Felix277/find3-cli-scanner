@@ -208,6 +208,9 @@ func main() {
 			if doWifi {
 				log.Infof("scanning with %s", wifiInterface)
 			}
+			if doWifi || doReverse {
+				log.Infof("scanning for %d seconds", scanSeconds)
+			}
 			if doBluetooth {
 				log.Infof("scanning bluetooth")
 			}
